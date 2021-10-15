@@ -21,7 +21,7 @@ Business Logic for Multiply two numbers Service.
 - Execute `make d/test` or run:
 
 ```shell
-docker run --rm -it -w /multiplyLogic -v $PWD/.:/multiplyLogic golang:1.17-alpine go test ./...
+docker run --rm -it -w /multiplyLogic -v $PWD/.:/multiplyLogic golang:1.17-alpine go test ./... -cover
 ```
 
 > ⚠️ Warning ⚠️
@@ -30,10 +30,11 @@ docker run --rm -it -w /multiplyLogic -v $PWD/.:/multiplyLogic golang:1.17-alpin
 
 # 3. CI/CD
 
-The `.github` directory contains the pipelines to testing the code in these two cases:
+The `.github` directory contains the pipelines to testing the code in these cases:
 
 - When someone pushed on `main` branch.
-- When someone sent a `Pull Request`.
+- When someone sent a `Pull Request`. (Please see the Pull Request tab)
+- When someone accepted the `Pull Request`.
 
 # 4. How to use into your project
 Execute the command:
