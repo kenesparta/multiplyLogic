@@ -12,6 +12,18 @@ This project has two related projects:
 3. All those projects (Rest and gRPC) have a CI/CD (please see the *Actions* tab on each repository) that push to Github
 Container registry (https://ghcr.io) and have **public access**.
 
+4. To set up the project, run this (for now, there isn't a `docker-file.yaml`)
+```shell
+docker pull ghcr.io/kenesparta/tk_rest_service:latest
+docker run --rm -d -p 8084:8084 --name rest_service ghcr.io/kenesparta/tk_rest_service
+
+docker pull ghcr.io/kenesparta/tk_grpc_service:latest
+docker run --rm -d -p 8085:8085 --name grpc_service ghcr.io/kenesparta/tk_grpc_service
+
+```
+
+![Tux, the Linux mascot](result.png)
+
 # 2. Requirements
 
 | Software         | Version | Importance                   |
