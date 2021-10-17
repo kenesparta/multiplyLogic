@@ -6,13 +6,11 @@ Business Logic for Multiply two numbers Service.
 | ---------------- | ------- | ---------------------------- |
 | 🐳 Docker         | 20.10.9 | Required                     |
 | 🐙 Docker Compose | 1.29.2  | Required                     |
-| 🐹 Go             | 1.17.1  | Optional (if you use docker) |
 | 🐃 GNU Make       | 4.2.1   | Optional                     |
 
 # 2. Testing
 
-- I create a `multiply_test.go` to perform tests.
-- to learn more see the file `Makefile`
+I create a `multiply_test.go` to perform tests, to learn more see the file `Makefile`
 
 ## 2.1 Using your local machine
 - Execute make `make l/test` to run the test.
@@ -39,5 +37,5 @@ The `.github` directory contains the pipelines to testing the code in these case
 # 4. How to use into your project
 Execute the command:
 ```shell
-go get github.com/kenesparta/multiplyLogic@latest
+go get -u github.com/kenesparta/multiplyLogic
 ```
